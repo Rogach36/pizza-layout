@@ -7,7 +7,21 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .wrapper {
+    position: relative;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -60,4 +74,46 @@ a {
 
 .site-nav li:first-child::before {
     display: none;
+}
+
+.features {
+    background-image: url(../image/banner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 260px;
+    padding-bottom: 285px;
+    color: #ffffff;
+}
+
+.pizza {
+    position: absolute;
+    right: 0;
+    top: -230px;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 18px;
+}
+
+.description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 570px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 2px solid #ffffff;
+    padding: 16px 0;
+    max-width: 190px;
+    text-align: center;
 }
