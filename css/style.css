@@ -28,6 +28,10 @@ a {
     margin: 0 auto;
 }
 
+.cover-center {
+    text-align: center;
+}
+
 .main-navigation {
     display: flex;
     align-items: center;
@@ -116,4 +120,106 @@ a {
     padding: 16px 0;
     max-width: 190px;
     text-align: center;
+}
+
+.order-actions {
+    position: relative;
+    font-size: 45px;
+    color: #282828;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    display: inline-block;
+    padding-right: 127px;
+    padding-left: 127px;
+    margin-bottom: 13px;
+}
+
+.order-actions::before, 
+.order-actions::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../image/item.png);
+    width: 102px;
+    height: 28px;
+    top: calc(50% - 14px);
+}
+
+.order-actions::before {
+    left: 0;
+}
+
+.order-actions::after {
+    right: 0;
+}
+
+.order-actions + p {
+    color: #959595;
+    font-family: 'Roboto', sans-serif;;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    margin-bottom: 42px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.menu li {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.menu li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    color: #494949;
+    background-color: #494949;
+}
+
+.menu li:first-child::before {
+    display: none;
+}
+
+.menu li a {
+    color: #494848;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 18px;
+}
+
+.menu li .active {
+    border-bottom: 4px solid #ee252d;
+    position: relative;
+}
+
+.menu li .active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid #ee252d;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.11);
 }
